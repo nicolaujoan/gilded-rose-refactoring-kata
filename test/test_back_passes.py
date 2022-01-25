@@ -1,3 +1,3 @@
 import pytest
-from gilded_rose import AgedBrie
+from gilded_rose import BackstagePass
 from test_collector import TestAutomata
