@@ -1,8 +1,8 @@
 # WE NEED TO AUTOMATE THE TESTING !!!
 # WE WILL WRITE A CLASS THAT TAKES ALL THE OCURRENCES AND GIVE IT INTO A LIST 
 
-class TestAutomata():
-    
+class TestAutomata:
+
     @staticmethod
     def getExpectedReps(fileName, itemName):
 
@@ -10,10 +10,10 @@ class TestAutomata():
 
         try:
             file = open(fileName, "r")
-        
-        except:
+
+        except FileNotFoundError:
             print("can't open the specified file")
-        
+
         else:
             hasStarted = False
             for line in file:
@@ -23,9 +23,8 @@ class TestAutomata():
                     if itemName in line:
                         expectedReps.append(line)
             file.close()
-        
-        return expectedReps
 
+        return expectedReps
 
 # print(TestAutomata.getExpectedReps("stdout.gr", "Aged Brie"))
 # print(TestAutomata.getExpectedReps("stdout.gr", "Conjured"))
@@ -35,4 +34,3 @@ class TestAutomata():
 # NEED TO TAKE ONLY THE DESIRED ONES
 # print(TestAutomata.getExpectedReps("stdout.gr", "Backstage passes"))
 # print(TestAutomata.getExpectedReps("stdout.gr", "Sulfuras"))
-
