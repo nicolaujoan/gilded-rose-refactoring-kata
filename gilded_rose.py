@@ -80,10 +80,10 @@ class NormalItem(Item, Updateable):
         self.sell_in -= 1
 
     def updateQuality(self):
-        if self.getSellIn() < 0 and self.getQuality() > 1:
+        if self.getSellIn() <= 0 and self.getQuality() > 1:
             self.decreaseQuality(2)
 
-        if self.getSellIn() >= 0 and self.getQuality() > 0:
+        if self.getSellIn() > 0 and self.getQuality() > 0:
             self.decreaseQuality(1)
 
         self.decreaseSellIn()

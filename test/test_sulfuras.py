@@ -7,9 +7,10 @@ sulfuras1 = Sulfuras("Sulfuras, Hand of Ragnaros", 0, 80)
 sulfuras2 = Sulfuras("Sulfuras, Hand of Ragnaros", -1, 80)
 
 # getting all sulfuras results from stdout.gr
-EXPECTED_REPS_1 = TestAutomata.getExpectedReps("stdout.gr", "Sulfuras")
+EXPECTED_REPS_1 = []
+EXPECTED_REPS_2 = []
 
 
 @pytest.mark.sulfuras
 def test_sulfuras():
-    assert 0 == 0
+    pass
