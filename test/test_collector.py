@@ -86,14 +86,3 @@ class TestAutomata:
             file.close()
 
         return expectedReps
-
-
-# quick tests:  --> method overloading works!
-# print(TestAutomata.getExpectedReps("stdout.gr", "Aged Brie"))
-# print(TestAutomata.getExpectedReps("", "", 3))
-# print(TestAutomata.getExpectedReps("stdout.gr", "Sulfuras", 2))
-# backstageReps = TestAutomata.getExpectedReps("stdout.gr", "Backstage", 3)
-# print(backstageReps)
-# print(backstageReps[0])
-# print(backstageReps[1])
-# print(backstageReps[2])
