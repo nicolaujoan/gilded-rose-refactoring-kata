@@ -21,15 +21,15 @@ def test_update_quality_1():
         assert backPass1.__repr__() == rep
 
 
-# @pytest.mark.back_pass_2
-# def test_update_quality_2():
-    # for rep in REPS_2:
-        # backPass2.updateQuality()
-        # assert backPass2.__repr__() == rep
+@pytest.mark.back_pass_2
+def test_update_quality_2():
+    for rep in REPS_2:
+        backPass2.updateQuality()
+        assert backPass2.__repr__() == rep
 
 
-# @pytest.mark.back_pass_1
-# def test_update_quality_3():
-    # for rep in REPS_3:
-        # backPass3.updateQuality()
-        # assert backPass3.__repr__() == rep
+@pytest.mark.back_pass_1
+def test_update_quality_3():
+    for rep in REPS_3:
+        backPass3.updateQuality()
+        assert backPass3.__repr__() == rep

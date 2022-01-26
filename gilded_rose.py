@@ -132,16 +132,16 @@ class BackstagePass(Item, Updateable):
         self.sell_in -= decrement
 
     def updateQuality(self):
-        if self.getSellIn() < 0 and self.getQuality() > 0:
+        if self.getSellIn() <= 0 and self.getQuality() >= 0:
             self.decreaseQuality(self.getQuality())
 
-        if self.getSellIn() <= 5 and self.getQuality() < (BackstagePass.MAX_QUALITY - 2):
+        elif self.getSellIn() <= 5 and self.getQuality() < (BackstagePass.MAX_QUALITY - 2):
             self.increaseQuality(3)
 
-        if self.getSellIn() <= 10 and self.getQuality() < (BackstagePass.MAX_QUALITY - 1):
+        elif self.getSellIn() <= 10 and self.getQuality() < (BackstagePass.MAX_QUALITY - 1):
             self.increaseQuality(2)
 
-        if self.getSellIn() >= 0 and self.getQuality() < BackstagePass.MAX_QUALITY:
+        elif self.getSellIn() >= 0 and self.getQuality() < BackstagePass.MAX_QUALITY:
             self.increaseQuality(1)
 
         self.decreaseSellIn(1)
