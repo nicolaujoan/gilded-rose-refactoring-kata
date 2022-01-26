@@ -7,7 +7,7 @@ This kata has the following purposes:
 - remove a mountain of if-else clauses by creating clases and applying common behaviors
 - Learn how inheritance works in python
 - simulate an interface in python (in this case an informal interface has been used)
-- automate the testing
+- automate the testing process (in test/test_collector.py we are using a class that help us), because the original tests are in test/stdout.gr
 
 #### see GildedRoseRequirements.txt to understand how the magic shop works
 
