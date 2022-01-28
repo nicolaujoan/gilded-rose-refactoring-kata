@@ -56,7 +56,7 @@ class NormalItem(Item, Updateable):
         self.decreaseSellIn()
 
 
-class Sulfuras(Item):
+class Sulfuras(Item, Updateable):
     QUALITY = 80
 
     def __init__(self, name, sell_in, quality):
