@@ -141,7 +141,7 @@ class BackstagePass(Item, Updateable):
         elif self.getSellIn() <= 10 and self.getQuality() < (BackstagePass.MAX_QUALITY - 1):
             self.increaseQuality(2)
 
-        elif self.getSellIn() >= 0 and self.getQuality() < BackstagePass.MAX_QUALITY:
+        else:
             self.increaseQuality(1)
 
         self.decreaseSellIn(1)
